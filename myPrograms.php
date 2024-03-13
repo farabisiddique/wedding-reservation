@@ -23,17 +23,24 @@ $stmt = $conn->query($sql);
           right: 0;
         }
 
-        .createProgram{
+        .searchGuest{
           position: absolute;
           top: 0;
           right: 100px;
+        }
+
+        .createProgram{
+          position: absolute;
+          top: 0;
+          right: 260px;
         }
     </style>
   </head>
   <body>
     
     <div class="container mt-5 position-relative">
-      <a class="btn btn-secondary createProgram" href='./search.php'>Search A Guest</a>
+      <a class="btn btn-secondary createProgram" href='./createProgram.php'>Create Program</a>
+      <a class="btn btn-secondary searchGuest" href='./search.php'>Search A Guest</a>
       <a class="btn btn-primary logoutBtn" href='./logoutHost.php'>Logout</a>
       <h2>Select a Program</h2> 
       

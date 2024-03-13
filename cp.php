@@ -5,7 +5,7 @@ include 'db.php'; // Adjust the path as necessary
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve the form data
-    $default_chair_per_table = 2;
+    $default_chair_per_table = 10;
     $prog_host_id = 1; // Assuming this comes from the form now
     $prog_name = $_POST['prog_name'];
     $prog_date_time = $_POST['prog_date_time'];

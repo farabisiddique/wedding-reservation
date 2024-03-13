@@ -12,7 +12,10 @@
         <!-- Tabs nav -->
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#host">Login as Host</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="#signup">Signup as Host</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#host">Login as Host</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#guest">Login as Guest</a>
@@ -21,7 +24,20 @@
 
         <!-- Tabs content -->
         <div class="tab-content">
-            <div class="tab-pane active container mt-3" id="host">
+            <div class="tab-pane active container mt-3" id="signup">
+                    <form action="signup.php" method="post">
+                        <div class="mb-3">
+                            <label for="sUsername" class="form-label">Host Username</label>
+                            <input type="text" class="form-control" id="sUsername" name="sUsername" placeholder="Enter Username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="sPassword" name="sPassword" placeholder="Enter Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup as Host</button>
+                    </form>
+            </div>
+            <div class="tab-pane container mt-3" id="host">
                 <form action="loginHost.php" method="post">
                     <div class="mb-3">
                         <label for="hostEmail" class="form-label">Host Username</label>
